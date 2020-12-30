@@ -88,3 +88,5 @@ df3 = house_df.filter(col("datetaken").between('2018-01-01', '2020-01-01')). \
                 distinct().orderBy('datetaken', asending=True)
 df3.show(120,False)
 df3.write.mode("overwrite").saveAsTable(f"""{v.DSDB}.monthlyhouseprices""")
+lst = (spark.sql("SELECT FROM_unixtime(unix_timestamp(), 'dd/MM/yyyy HH:mm:ss.ss') ")).collect()
+print("\nFinished at");uf.println(lst)
