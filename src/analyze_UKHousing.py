@@ -45,7 +45,6 @@ https://stackoverflow.com/questions/59278835/pyspark-how-to-write-dataframe-part
 """
 wSpecY = Window().partitionBy(F.date_format('datetaken',"yyyy"))
 wSpecM = Window().partitionBy(F.date_format('datetaken',"yyyy"), F.date_format('datetaken',"MM"))  ## partion by Year and Month
-#val wSpec2 = Window.orderBy('weightkg)
 
 print(f"""\nAnnual House prices in {regionname} in GBP""")
 
