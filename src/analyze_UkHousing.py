@@ -28,6 +28,8 @@ sc = s.sparkcontext()
 regionname = "Kensington and Chelsea"
 tableName="ukhouseprices"
 fullyQualifiedTableName = v.DSDB+'.'+tableName
+start_date = "2010-01-01"
+end_date = "2020-01-01"
 lst = (spark.sql("SELECT FROM_unixtime(unix_timestamp(), 'dd/MM/yyyy HH:mm:ss.ss') ")).collect()
 print("\nStarted at");uf.println(lst)
 if (spark.sql(f"""SHOW TABLES IN {v.DSDB} like '{tableName}'""").count() == 1):
@@ -37,8 +39,8 @@ if (spark.sql(f"""SHOW TABLES IN {v.DSDB} like '{tableName}'""").count() == 1):
 else:
     print(f"""No such table {fullyQualifiedTableName}""")
     sys.exit(1)
-"""
-rs1 = OracleDF.filter(col("datetaken").between("2020-01-01","2020-12-31")). \
+f"""
+rs1 = OracleDF.filter(col("datetaken").between("{start_date}","{end_date}")). \
         select(date_format(col("datetaken"),"EEEE").alias("DOW"), \
         date_format(col("datetaken"),"u").alias("DNUMBER"), \
         avg(col("weight")).over(wSpec).alias("weightkg"), \
