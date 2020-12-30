@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0d7c971-1494-4353-bc40-e872b9d49447" name="Default Changelist" comment="first commit">
-      <change beforePath="$PROJECT_DIR$/.idea/DS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DS.iml" afterDir="false" />
+    <list default="true" id="e0d7c971-1494-4353-bc40-e872b9d49447" name="Default Changelist" comment="minor changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/analyze_UkHousing.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/analyze_UkHousing.py" afterDir="false" />
     </list>
@@ -37,7 +36,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../packages" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.analyze_UkHousing">
+  <component name="RunManager" selected="Python.analyze_UKHousing">
     <configuration name="Boston" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DS" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -59,7 +58,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="analyze_UkHousing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="analyze_UKHousing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DS" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -71,7 +70,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/analyze_UkHousing.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\admin\PycharmProjects\pythonProject2\DS\src\analyze_UKHousing.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -124,7 +123,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.analyze_UkHousing" />
+        <item itemvalue="Python.analyze_UKHousing" />
         <item itemvalue="Python.Boston" />
         <item itemvalue="Python.load_UK_house_indexes.txt" />
         <item itemvalue="Python.usedFunctions" />
@@ -175,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609327207488</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="minor changes">
+      <created>1609328093126</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1609328093126</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -195,6 +201,7 @@
       <path value="$PROJECT_DIR$/../../packages" />
     </ignored-roots>
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="minor changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor changes" />
   </component>
 </project>
