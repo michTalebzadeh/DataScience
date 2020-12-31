@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0d7c971-1494-4353-bc40-e872b9d49447" name="Default Changelist" comment="tests were added">
+    <list default="true" id="e0d7c971-1494-4353-bc40-e872b9d49447" name="Default Changelist" comment="minor change to analyse_UKHousing.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/analyze_UKHousing.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/analyze_UKHousing.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +42,7 @@
       <recent name="C:\Users\admin\PycharmProjects\pythonProject2\DS" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.analyze_UKHousing (1)">
+  <component name="RunManager" selected="Python.analyze_UKHousing">
     <configuration name="Boston" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DS" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -63,7 +64,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="analyze_UKHousing (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="analyze_UKHousing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DS" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -75,7 +76,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/analyze_UKHousing.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\admin\PycharmProjects\pythonProject2\DS\src\analyze_UKHousing.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -96,7 +97,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\admin\PycharmProjects\pythonProject2\DS\src\analyze_UKHousing.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/analyze_UKHousing.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -142,9 +143,15 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.analyze_UKHousing" />
+      <item itemvalue="Python.Boston" />
+      <item itemvalue="Python.load_UK_house_indexes.txt" />
+      <item itemvalue="Python tests.pytest in test_analyze_UKHousing.py" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.analyze_UKHousing (1)" />
+        <item itemvalue="Python.analyze_UKHousing" />
         <item itemvalue="Python tests.pytest in test_analyze_UKHousing.py" />
         <item itemvalue="Python.analyze_UKHousing" />
         <item itemvalue="Python.Boston" />
@@ -217,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609343745192</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="minor change to analyse_UKHousing.py">
+      <created>1609358014138</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1609358014138</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -239,6 +253,7 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="minor changes" />
     <MESSAGE value="tests were added" />
-    <option name="LAST_COMMIT_MESSAGE" value="tests were added" />
+    <MESSAGE value="minor change to analyse_UKHousing.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor change to analyse_UKHousing.py" />
   </component>
 </project>
