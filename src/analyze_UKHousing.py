@@ -61,7 +61,7 @@ df2 = house_df.filter(col("datetaken").between(f'{start_date}', f'{end_date}')).
                       F.date_format('datetaken','yyyy').alias('Year') \
                     , round(F.avg('averageprice').over(wSpecY)).alias('AVGPricePerYear') \
                     , round(F.avg('flatprice').over(wSpecY)).alias('AVGFlatPricePerYear') \
-                    , round(F.avg('TerracedPrice').over(wSpecY)).alias('AVGTeraccedPricePerYear') \
+                    , round(F.avg('TerracedPrice').over(wSpecY)).alias('AVGTerracedPricePerYear') \
                     , round(F.avg('SemiDetachedPrice').over(wSpecY)).alias('AVGSemiDetachedPricePerYear') \
                     , round(F.avg('DetachedPrice').over(wSpecY)).alias('AVGDetachedPricePerYear')). \
                 distinct().orderBy('datetaken', asending=True)
@@ -88,7 +88,7 @@ df3 = house_df.filter(col("datetaken").between('2018-01-01', '2020-01-01')). \
                       col('datetaken')[1:7].alias('Year-Month') \
                     , round(F.avg('averageprice').over(wSpecM)).alias('AVGPricePerMonth') \
                     , round(F.avg('flatprice').over(wSpecM)).alias('AVGFlatPricePerMonth') \
-                    , round(F.avg('TerracedPrice').over(wSpecM)).alias('AVGTeraccedPricePerMonth') \
+                    , round(F.avg('TerracedPrice').over(wSpecM)).alias('AVGTerracedPricePerMonth') \
                     , round(F.avg('SemiDetachedPrice').over(wSpecM)).alias('AVGSemiDetachedPricePerMonth') \
                     , round(F.avg('DetachedPrice').over(wSpecM)).alias('AVGDetachedPricePerMonth')). \
                 distinct().orderBy('datetaken', asending=True)
