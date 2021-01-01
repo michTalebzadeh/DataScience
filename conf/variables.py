@@ -1,3 +1,9 @@
+# define font dictionary
+font = {'family': 'serif',
+        'color':  'darkred',
+        'weight': 'normal',
+        'size': 12,
+        }
 # Hive variables
 DB = "pycharm"
 tableName = "randomDataPy"

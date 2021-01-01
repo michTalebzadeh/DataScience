@@ -33,6 +33,7 @@ sc = s.sparkcontext()
 regionname = "Kensington and Chelsea"
 tableName="ukhouseprices"
 fullyQualifiedTableName = v.DSDB+'.'+tableName
+summaryTableName = v.DSDB+'.'+'summary'
 start_date = "2010-01-01"
 end_date = "2020-01-01"
 lst = (spark.sql("SELECT FROM_unixtime(unix_timestamp(), 'dd/MM/yyyy HH:mm:ss.ss') ")).collect()
@@ -101,6 +102,7 @@ print(f"""\nMonthly House price changes in {regionname} in GBP""")
 
 rsM = resultM.select('Year-Month', 'AVGPricePerMonth', 'prev_month_value', 'percent_change')
 rsM.show(36,False)
-rsM.write.mode("overwrite").saveAsTable(f"""{v.DSDB}.percentmonthlythousepricechange""")
+rsM.write.mode("overwrite").saveAsTable(f"""{v.DSDB}.percentmonthlyHousepricechange""")
+
 lst = (spark.sql("SELECT FROM_unixtime(unix_timestamp(), 'dd/MM/yyyy HH:mm:ss.ss') ")).collect()
 print("\nFinished at");uf.println(lst)
