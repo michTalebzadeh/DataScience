@@ -47,12 +47,12 @@ import mpl_toolkits
 import tkinter
 import matplotlib.pyplot as plt
 spark.conf.set("spark.sql.execution.arrow.pyspark.enabled", "true")
-summary_df = spark.sql(f"""select year, percent_change as PercentYearlyChange FROM {v.DSDB}.percentyearlyhousepricechange""")
+summary_df = spark.sql(f"""select Year_Month, percent_change as PercentMonthlyChange FROM {v.DSDB}.percentmonthlyhousepricechange where year_month > '201901' order by 1""")
 p_df = summary_df.toPandas()
 print(p_df)
-p_df.plot(kind='line',stacked = False, x = 'year', y = ['PercentYearlyChange'])
-plt.xlabel("year", fontdict=v.font)
-plt.ylabel("Annual Percent Property Price change", fontdict=v.font)
+p_df.plot(kind='line',stacked = False, x = 'Year_Month', y = ['PercentMonthlyChange'])
+plt.xlabel("YearMonth", fontdict=v.font)
+plt.ylabel("Monthly Percent Property Price change", fontdict=v.font)
 plt.title(f"""Property price fluctuations in {regionname} for the past 10 years """, fontdict=v.font)
 plt.show()
 plt.close()

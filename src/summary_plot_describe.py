@@ -5,7 +5,14 @@ from sparkutils import sparkstuff as s
 import usedFunctions as uf
 import matplotlib.pyplot as plt
 from lmfit.models import LorentzianModel
+from pyspark.ml.feature import VectorAssembler
+from pyspark.ml.regression import LinearRegression
+from pyspark.ml.stat import ChiSquareTest
+from pyspark.ml.regression import DecisionTreeRegressor
+from pyspark.ml.regression import GBTRegressor
+from pyspark.ml.evaluation import RegressionEvaluator
 from pandas.plotting import scatter_matrix
+from scipy.optimize import differential_evolution
 try:
   import variables as v
 except ModuleNotFoundError:
@@ -42,42 +49,75 @@ n = len(p_dfm.columns)
 for i in range(n):
   if p_dfm.columns[i] != 'year':   # year is x axis in integer
      # it goes through the loop and plots individual average curves one by one and then prints a report for each y value
-     print(p_dfm.columns[i])
-     params = model.guess(p_dfm[p_dfm.columns[i]], x = p_dfm['year'])
-     result = model.fit(p_dfm[p_dfm.columns[i]], params, x = p_dfm['year'])
+     vcolumn = p_dfm.columns[i]
+     print(vcolumn)
+     params = model.guess(p_dfm[vcolumn], x = p_dfm['year'])
+     result = model.fit(p_dfm[vcolumn], params, x = p_dfm['year'])
      result.plot_fit()
-     if p_dfm.columns[i] == "AVGFlatPricePerYear":
+
+
+     # do linear regression here
+     # Prepare data for Machine Learning.And we need two columns only — features and label(p_dfm.columns[i]]):
+     inputCols = ['year']
+     vectorAssembler = VectorAssembler(inputCols=inputCols, outputCol='features')
+     vhouse_df = vectorAssembler.transform(df_10)
+     vhouse_df = vhouse_df.select(['features', 'AVGFlatPricePerYear'])
+     vhouse_df.show(20)
+     if vcolumn == "AVGFlatPricePerYear":
          plt.xlabel("Year", fontdict=v.font)
-         plt.ylabel("Flat Prices in millions/GBP", fontdict=v.font)
+         plt.ylabel("Flat house prices in millions/GBP", fontdict=v.font)
          plt.title(f"""Flat price fluctuations in {regionname} for the past 10 years """, fontdict=v.font)
          plt.text(0.35,
             0.45,
             "Best-fit based on Non-Linear Lorentzian Model",
             transform=plt.gca().transAxes,
             color="grey",
-            fontsize=9
+            fontsize=10
          )
          print(result.fit_report())
+         plt.xlim(left=2009)
+         plt.xlim(right=2022)
          plt.show()
          plt.close()
-     elif p_dfm.columns[i] == "AVGTerracedPricePerYear":
+     elif vcolumn == "AVGTerracedPricePerYear":
             plt.xlabel("Year", fontdict=v.font)
-            plt.ylabel("Terraced houseprices in millions/GBP", fontdict=v.font)
+            plt.ylabel("Terraced house prices in millions/GBP", fontdict=v.font)
             plt.title(f"""Terraced house price fluctuations in {regionname} for the past 10 years """, fontdict=v.font)
+            plt.text(0.35,
+                     0.45,
+                     "Best-fit based on Non-Linear Lorentzian Model",
+                     transform=plt.gca().transAxes,
+                     color="grey",
+                     fontsize=10
+                     )
             print(result.fit_report())
             plt.show()
             plt.close()
-     elif p_dfm.columns[i] == "AVGSemiDetachedPricePerYear":
+     elif vcolumn == "AVGSemiDetachedPricePerYear":
             plt.xlabel("Year", fontdict=v.font)
             plt.ylabel("semi-detached house prices in millions/GBP", fontdict=v.font)
             plt.title(f"""semi-detached house price fluctuations in {regionname} for the past 10 years """, fontdict=v.font)
+            plt.text(0.35,
+                     0.45,
+                     "Best-fit based on Non-Linear Lorentzian Model",
+                     transform=plt.gca().transAxes,
+                     color="grey",
+                     fontsize=10
+                     )
             print(result.fit_report())
             plt.show()
             plt.close()
-     elif p_dfm.columns[i] == "AVGDetachedPricePerYear":
+     elif vcolumn == "AVGDetachedPricePerYear":
             plt.xlabel("Year", fontdict=v.font)
             plt.ylabel("detached house prices in millions/GBP", fontdict=v.font)
             plt.title(f"""detached house price fluctuations in {regionname} for the past 10 years """, fontdict=v.font)
+            plt.text(0.35,
+                     0.45,
+                     "Best-fit based on Non-Linear Lorentzian Model",
+                     transform=plt.gca().transAxes,
+                     color="grey",
+                     fontsize=10
+                     )
             print(result.fit_report())
             plt.show()
             plt.close()

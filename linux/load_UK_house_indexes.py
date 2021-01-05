@@ -25,7 +25,7 @@ def hivecontext():
 appName = "DS"
 spark =spark_session(appName)
 ##
-## Get a DF first based on Databricks CSV libraries ignore column heading because of column called "Type"
+## Get a DF first
 ##
 csvlocation="hdfs://rhes75:9000/ds/UK-HPI-full-file-2020-01.csv"
 

@@ -4,272 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0d7c971-1494-4353-bc40-e872b9d49447" name="Default Changelist" comment="major additions to pandas plotting modules">
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/QtPy-1.9.0.dist-info/AUTHORS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/QtPy-1.9.0.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/QtPy-1.9.0.dist-info/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/QtPy-1.9.0.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/QtPy-1.9.0.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/QtPy-1.9.0.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/QtPy-1.9.0.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets-7.6.2.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets-7.6.2.dist-info/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets-7.6.2.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets-7.6.2.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets-7.6.2.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets-7.6.2.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/_version.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/embed.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/state.schema.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/tests/test_embed.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/view.schema.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/docutils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/domwidget.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/interaction.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/tests/data/jupyter-logo-transparent.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/tests/test_docutils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/tests/test_interaction.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/tests/test_link.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/tests/test_selectioncontainer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/tests/test_send_state.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/tests/test_set_state.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/tests/test_traits.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/tests/test_widget.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/tests/test_widget_box.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/tests/test_widget_float.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/tests/test_widget_image.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/tests/test_widget_output.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/tests/test_widget_selection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/tests/test_widget_string.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/tests/test_widget_templates.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/tests/test_widget_upload.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/tests/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/trait_types.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/valuewidget.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/widget.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/widget_bool.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/widget_box.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/widget_button.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/widget_color.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/widget_controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/widget_core.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/widget_date.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/widget_description.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/widget_float.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/widget_int.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/widget_layout.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/widget_link.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/widget_media.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/widget_output.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/widget_selection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/widget_selectioncontainer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/widget_string.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/widget_style.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/widget_templates.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ipywidgets/widgets/widget_upload.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyter-1.0.0.dist-info/DESCRIPTION.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyter-1.0.0.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyter-1.0.0.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyter-1.0.0.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyter-1.0.0.dist-info/REQUESTED" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyter-1.0.0.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyter-1.0.0.dist-info/metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyter-1.0.0.dist-info/pbr.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyter-1.0.0.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyter_console-6.2.0.dist-info/COPYING.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyter_console-6.2.0.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyter_console-6.2.0.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyter_console-6.2.0.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyter_console-6.2.0.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyter_console-6.2.0.dist-info/entry_points.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyter_console-6.2.0.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyter_console/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyter_console/__main__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyter_console/_version.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyter_console/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyter_console/completer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyter_console/ptshell.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyter_console/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyter_console/tests/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyter_console/tests/test_console.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyter_console/tests/test_image_handler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyter_console/tests/writetofile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyter_console/zmqhistory.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyterlab_widgets-1.0.0.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyterlab_widgets-1.0.0.dist-info/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyterlab_widgets-1.0.0.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyterlab_widgets-1.0.0.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyterlab_widgets-1.0.0.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyterlab_widgets-1.0.0.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyterlab_widgets/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyterlab_widgets/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyterlab_widgets/_version.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyterlab_widgets/labextension/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyterlab_widgets/labextension/schemas/@jupyter-widgets/jupyterlab-manager/package.json.orig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jupyterlab_widgets/labextension/schemas/@jupyter-widgets/jupyterlab-manager/plugin.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole-5.0.1.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole-5.0.1.dist-info/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole-5.0.1.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole-5.0.1.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole-5.0.1.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole-5.0.1.dist-info/entry_points.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole-5.0.1.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/__main__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/_version.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/ansi_code_processor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/base_frontend_mixin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/bracket_matcher.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/call_tip_widget.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/comms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/completion_html.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/completion_plain.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/completion_widget.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/console_widget.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/frontend_widget.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/history_console_widget.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/inprocess.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/ipython_widget.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/jupyter_widget.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/kernel_mixins.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/kill_ring.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/mainwindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/manager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/pygments_highlighter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/qstringhelpers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/qtconsoleapp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/resources/icon/JupyterConsole.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/rich_ipython_widget.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/rich_jupyter_widget.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/rich_text.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/styles.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/svg.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/tests/test_00_console_widget.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/tests/test_ansi_code_processor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/tests/test_app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/tests/test_comms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/tests/test_completion_widget.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/tests/test_frontend_widget.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/tests/test_jupyter_widget.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/tests/test_kill_ring.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/tests/test_styles.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/usage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtconsole/util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/Qt3DAnimation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/Qt3DCore.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/Qt3DExtras.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/Qt3DInput.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/Qt3DLogic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/Qt3DRender.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/QtCharts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/QtCore.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/QtDatavisualization.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/QtDesigner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/QtGui.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/QtHelp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/QtLocation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/QtMultimedia.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/QtMultimediaWidgets.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/QtNetwork.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/QtOpenGL.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/QtPrintSupport.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/QtQml.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/QtQuick.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/QtQuickWidgets.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/QtSql.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/QtSvg.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/QtTest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/QtWebChannel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/QtWebEngineWidgets.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/QtWebSockets.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/QtWidgets.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/QtXmlPatterns.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/_patch/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/_patch/qcombobox.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/_patch/qheaderview.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/_version.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/compat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/py3compat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/tests/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/tests/runtests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/tests/test_macos_checks.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/tests/test_main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/tests/test_patch_qcombobox.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/tests/test_patch_qheaderview.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/tests/test_qdesktopservice_split.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/tests/test_qt3danimation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/tests/test_qt3dcore.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/tests/test_qt3dextras.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/tests/test_qt3dinput.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/tests/test_qt3dlogic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/tests/test_qt3drender.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/tests/test_qtcharts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/tests/test_qtcore.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/tests/test_qtdatavisualization.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/tests/test_qtdesigner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/tests/test_qthelp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/tests/test_qtlocation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/tests/test_qtmultimedia.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/tests/test_qtmultimediawidgets.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/tests/test_qtnetwork.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/tests/test_qtprintsupport.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/tests/test_qtqml.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/tests/test_qtquick.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/tests/test_qtquickwidgets.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/tests/test_qtsql.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/tests/test_qtsvg.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/tests/test_qttest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/tests/test_qtwebchannel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/tests/test_qtwebenginewidgets.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/tests/test_qtwebsockets.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/tests/test_qtxmlpatterns.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/tests/test_uic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/qtpy/uic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/widgetsnbextension-3.5.1.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/widgetsnbextension-3.5.1.dist-info/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/widgetsnbextension-3.5.1.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/widgetsnbextension-3.5.1.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/widgetsnbextension-3.5.1.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/widgetsnbextension-3.5.1.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/widgetsnbextension/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/widgetsnbextension/_version.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/widgetsnbextension/static/extension.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/widgetsnbextension/static/extension.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Scripts/jupyter-console.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Scripts/jupyter-qtconsole.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/etc/jupyter/nbconfig/notebook.d/widgetsnbextension.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/install.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/schemas/@jupyter-widgets/jupyterlab-manager/package.json.orig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/schemas/@jupyter-widgets/jupyterlab-manager/plugin.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/1.6c3ab69171002cbfa04f.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/18.5fbcd9c56ded92ea9df9.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/243.6c384ff2649ef572a18a.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/272.2a8425db7209008188fc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/279.aa88a78c8bf62c65db54.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/466.a599fb4fe0d2bfec0669.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/523.fa256ee012d38a89b65a.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/638.f3e5e34a28f3334d4f08.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/638.f3e5e34a28f3334d4f08.js.LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/803.b7b75bd6e7977a648c67.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/868.c125b968409ba9295199.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/95.b5a5ff10000a6051fa99.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/95.b5a5ff10000a6051fa99.js.LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/remoteEntry.ca1efc27dc965162ca86.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/style.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/share/jupyter/nbextensions/jupyter-js-widgets/extension.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/share/jupyter/nbextensions/jupyter-js-widgets/extension.js.map" afterDir="false" />
+    <list default="true" id="e0d7c971-1494-4353-bc40-e872b9d49447" name="Default Changelist" comment="added linux files to linux folder">
+      <change afterPath="$PROJECT_DIR$/src/PlotPercentMonthlyChange.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/analyze_per_district.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/somecrap.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PLotYearlyPrices.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/PLotYearlyPrices.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/variables.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf/variables.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linux/load_UK_house_indexes.py" beforeDir="false" afterPath="$PROJECT_DIR$/linux/load_UK_house_indexes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PlotPercentYearlyChange.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlotPercentYearlyChange.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/analyze_UKHousing.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/analyze_UKHousing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/summary_plot_describe.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/summary_plot_describe.py" afterDir="false" />
     </list>
@@ -333,7 +75,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="PlotPercentYearlyChange" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="PlotPercentMonthlyChange" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DS" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -345,49 +87,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/PlotPercentYearlyChange.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="PlotPropertType" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DS" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/PlotPropertType.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Plot_VolumrOfSales" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DS" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/Plot_VolumrOfSales.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/PlotPercentMonthlyChange.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -409,6 +109,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/analyze_UKHousing.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="analyze_per_district" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DS" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/analyze_per_district.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -440,19 +161,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.analyze_UKHousing" />
-      <item itemvalue="Python.Plot_VolumrOfSales" />
-      <item itemvalue="Python.PlotPercentYearlyChange" />
-      <item itemvalue="Python.PlotPropertType" />
-      <item itemvalue="Python.PLotYearlyPrices" />
+      <item itemvalue="Python.PlotPercentMonthlyChange" />
       <item itemvalue="Python.summary_plot_describe" />
+      <item itemvalue="Python.PLotYearlyPrices" />
+      <item itemvalue="Python.analyze_per_district" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.summary_plot_describe" />
-        <item itemvalue="Python.analyze_UKHousing" />
+        <item itemvalue="Python.analyze_per_district" />
+        <item itemvalue="Python.PlotPercentMonthlyChange" />
         <item itemvalue="Python.PLotYearlyPrices" />
-        <item itemvalue="Python.PlotPropertType" />
-        <item itemvalue="Python.PlotPercentYearlyChange" />
+        <item itemvalue="Python.analyze_UKHousing" />
       </list>
     </recent_temporary>
   </component>
@@ -542,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609495727437</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added linux files to linux folder">
+      <created>1609533892633</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1609533892633</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -568,7 +295,8 @@
     <MESSAGE value="minor change to analyse_UKHousing.py" />
     <MESSAGE value="major changes to analyse_UKHousing.py" />
     <MESSAGE value="major additions to pandas plotting modules" />
-    <option name="LAST_COMMIT_MESSAGE" value="major additions to pandas plotting modules" />
+    <MESSAGE value="added linux files to linux folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="added linux files to linux folder" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

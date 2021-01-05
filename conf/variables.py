@@ -2,7 +2,13 @@
 font = {'family': 'serif',
         'color':  'darkred',
         'weight': 'normal',
-        'size': 12,
+        'size': 10,
+        }
+# define font dictionary
+font_small = {'family': 'serif',
+        'color':  'darkred',
+        'weight': 'normal',
+        'size': 7,
         }
 # Hive variables
 DB = "pycharm"

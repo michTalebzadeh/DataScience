@@ -6,17 +6,6 @@ from pyspark.sql.window import Window
 from pyspark.sql.functions import lag
 from sparkutils import sparkstuff as s
 import usedFunctions as uf
-from pyhive import hive
-from pyspark.ml.feature import VectorAssembler
-from pyspark.ml.regression import LinearRegression
-from pyspark.ml.regression import DecisionTreeRegressor
-from pyspark.ml.regression import GBTRegressor
-from pyspark.ml.evaluation import RegressionEvaluator
-import numpy as np
-import matplotlib.pyplot as plt
-import pandas as pd
-from pandas.plotting import scatter_matrix
-import six
 import locale
 locale.setlocale(locale.LC_ALL, 'en_GB')
 try:
@@ -83,9 +72,9 @@ rs.write.mode("overwrite").saveAsTable(f"""{v.DSDB}.percentyearlyhousepricechang
 
 wSpecM = Window().partitionBy(F.date_format('datetaken',"yyyy"), F.date_format('datetaken',"MM"))  ## partion by Year and Month
 
-df3 = house_df.filter(col("datetaken").between('2018-01-01', '2020-01-01')). \
+df3 = house_df.filter(col("datetaken").between('2010-01-01', '2020-01-01')). \
                 select( \
-                      col('datetaken')[1:7].alias('Year-Month') \
+                      (F.date_format(col('datetaken'), "yyyyMM")).alias('Year_Month') \
                     , round(F.avg('averageprice').over(wSpecM)).alias('AVGPricePerMonth') \
                     , round(F.avg('flatprice').over(wSpecM)).alias('AVGFlatPricePerMonth') \
                     , round(F.avg('TerracedPrice').over(wSpecM)).alias('AVGTerracedPricePerMonth') \
@@ -93,16 +82,17 @@ df3 = house_df.filter(col("datetaken").between('2018-01-01', '2020-01-01')). \
                     , round(F.avg('DetachedPrice').over(wSpecM)).alias('AVGDetachedPricePerMonth')). \
                 distinct().orderBy('datetaken', asending=True)
 
-wSpecPM = Window().orderBy('Year-Month')
+wSpecPM = Window().orderBy('Year_Month')
 
 df_lagM = df3.withColumn("prev_month_value", F.lag(df3['AVGPricePerMonth']).over(wSpecPM))
 resultM = df_lagM.withColumn('percent_change', F.when(F.isnull(df3.AVGPricePerMonth - df_lagM.prev_month_value),0). \
                          otherwise(F.round(((df3.AVGPricePerMonth-df_lagM.prev_month_value)*100.)/df_lagM.prev_month_value,1)))
 print(f"""\nMonthly House price changes in {regionname} in GBP""")
 
-rsM = resultM.select('Year-Month', 'AVGPricePerMonth', 'prev_month_value', 'percent_change')
+rsM = resultM.select('Year_Month', 'AVGPricePerMonth', 'prev_month_value', 'percent_change')
 rsM.show(36,False)
 rsM.write.mode("overwrite").saveAsTable(f"""{v.DSDB}.percentmonthlyHousepricechange""")
+
 
 lst = (spark.sql("SELECT FROM_unixtime(unix_timestamp(), 'dd/MM/yyyy HH:mm:ss.ss') ")).collect()
 print("\nFinished at");uf.println(lst)
