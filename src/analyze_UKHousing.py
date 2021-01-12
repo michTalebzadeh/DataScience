@@ -49,7 +49,7 @@ def main():
     print(f"Total number of rows for {regionname} is ", rows)
 
     print(f"""\nAnnual House prices in {regionname} in GBP""")
-
+    # Workout yearly aversge prices for a given region
     df2 = house_df.filter(col("datetaken").between(f'{start_date}', f'{end_date}')). \
                     select( \
                           F.date_format('datetaken','yyyy').alias('Year') \
@@ -61,19 +61,7 @@ def main():
                     distinct().orderBy('datetaken', asending=True)
 
     df2.show(10,False)
-    df2.write.mode("overwrite").saveAsTable(f"""{monthTable}""")
-
-    wSpecPY = Window().orderBy('year')
-
-    df_lag = df2.withColumn("prev_year_value", F.lag(df2['AVGPricePerYear']).over(wSpecPY))
-    result = df_lag.withColumn('percent_change', F.when(F.isnull(df2.AVGPricePerYear - df_lag.prev_year_value),0). \
-                               otherwise(F.round(((df2.AVGPricePerYear-df_lag.prev_year_value)*100.)/df_lag.prev_year_value,1)))
-
-    print(f"""\nPercent annual Average House prices change in {regionname}""")
-
-    rs = result.select('Year', 'AVGPricePerYear', 'prev_year_value', 'percent_change')
-    rs.show()
-    rs.write.mode("overwrite").saveAsTable(f"""{yearTable}""")
+    df2.write.mode("overwrite").saveAsTable(f"""{yearTable}""")
 
     wSpecM = Window().partitionBy(F.date_format('datetaken',"yyyy"), F.date_format('datetaken',"MM"))  ## partion by Year and Month
 
