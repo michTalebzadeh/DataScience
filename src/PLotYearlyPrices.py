@@ -5,7 +5,7 @@ from pyspark.sql.functions import col, round
 from pyspark.sql.window import Window
 from pyspark.sql.functions import lag
 from sparkutils import sparkstuff as s
-import usedFunctions as uf
+from othermisc import usedFunctions as uf
 from pyhive import hive
 from pyspark.ml.feature import VectorAssembler
 from pyspark.ml.regression import LinearRegression
@@ -18,6 +18,9 @@ import pandas as pd
 from pandas.plotting import scatter_matrix
 import six
 import locale
+import seaborn as sns
+import mpl_toolkits
+import tkinter
 locale.setlocale(locale.LC_ALL, 'en_GB')
 try:
   import variables as v
@@ -39,11 +42,7 @@ end_date = "2020-01-01"
 lst = (spark.sql("SELECT FROM_unixtime(unix_timestamp(), 'dd/MM/yyyy HH:mm:ss.ss') ")).collect()
 print("\nStarted at");uf.println(lst)
 # Model predictions
-import matplotlib.pyplot as plt
-import seaborn as sns
-import mpl_toolkits
-import tkinter
-import matplotlib.pyplot as plt
+
 spark.conf.set("spark.sql.execution.arrow.pyspark.enabled", "true")
 summary_df = spark.sql(f"""SELECT * FROM {v.DSDB}.yearlyhouseprices""")
 p_df = summary_df.toPandas()

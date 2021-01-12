@@ -62,12 +62,19 @@ dbSet = "oracletoaerospike2"
 dbKey = "ID"
 
 # GCP variables
-projectname = 'GCP First Project'
+projectId = 'axial-glow-224522'
+datasetLocation = "europe-west2"
 bucketname = 'etcbucket'
-dataset = 'test_python'
-bqTable = 'DUMMY'
-bqFields = 99
-bqRows = 1000
+sourceDataset = "staging"
+sourceTable = "ukhouseprices"
+inputTable = sourceDataset+"."+sourceTable
+fullyQualifiedInputTableId = projectId+":"+inputTable
+targetDataset = "ds"
+targetTable = "summary"
+outputTable = targetDataset+"."+targetTable
+fullyQualifiedoutputTableId = projectId+":"+outputTable
+tmp_bucket = "gs://tmp_storage_bucket/tmp"
+jsonKeyFile = "d:\\temp\GCPFirstProject-d75f1b3a9817.json"
 
 # GCP table schema
 col_names = ['ID', 'CLUSTERED', 'SCATTERED','RANDOMISED', 'RANDOM_STRING', 'SMALL_VC', 'PADDING']
@@ -76,5 +83,6 @@ col_modes = ['REQUIRED', 'NULLABLE', 'NULLABLE', 'NULLABLE', 'NULLABLE', 'NULLAB
 
 # DS stuff
 DSDB = "DS"
+regionname = "Kensington and Chelsea"
 Boston_csvlocation="hdfs://rhes75:9000/ds/Boston.csv"
 London_csvLocation="hdfs://rhes75:9000/ds/UK-HPI-full-file-2020-01.csv"
