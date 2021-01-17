@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: debugger
+Version: 1.3
+Summary: Debugging.
+Home-page: https://github.com/horejsek/python-debugger
+Author: Michal Horejsek
+Author-email: horejsekmichal@gmail.com
+License: PSF
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Python Software Foundation License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

@@ -68,12 +68,13 @@ bucketname = 'etcbucket'
 sourceDataset = "staging"
 sourceTable = "ukhouseprices"
 inputTable = sourceDataset+"."+sourceTable
+
 fullyQualifiedInputTableId = projectId+":"+inputTable
 targetDataset = "ds"
 targetTable = "summary"
 outputTable = targetDataset+"."+targetTable
 fullyQualifiedoutputTableId = projectId+":"+outputTable
-tmp_bucket = "gs://tmp_storage_bucket/tmp"
+tmp_bucket = "tmp_storage_bucket/tmp"
 jsonKeyFile = "d:\\temp\GCPFirstProject-d75f1b3a9817.json"
 
 # GCP table schema
@@ -81,7 +82,7 @@ col_names = ['ID', 'CLUSTERED', 'SCATTERED','RANDOMISED', 'RANDOM_STRING', 'SMAL
 col_types = ['FLOAT', 'FLOAT', 'FLOAT', 'FLOAT', 'STRING', 'STRING', 'STRING']
 col_modes = ['REQUIRED', 'NULLABLE', 'NULLABLE', 'NULLABLE', 'NULLABLE', 'NULLABLE', 'NULLABLE']
 
-# DS stuff
+# DS variables (Hive)
 DSDB = "DS"
 regionname = "Kensington and Chelsea"
 Boston_csvlocation="hdfs://rhes75:9000/ds/Boston.csv"

@@ -8,28 +8,23 @@ from sparkutils import sparkstuff as s
 from othermisc import usedFunctions as uf
 import locale
 locale.setlocale(locale.LC_ALL, 'en_GB')
-try:
-  import variables as v
-except ModuleNotFoundError:
-  from conf import parameters as v
+from config import config
 
 def main():
-    print (f"""Getting average yearly prices per region""")
-    appName = "ukhouseprices"
+    appName = config['common']['appName']
     spark = s.spark_session(appName)
-    spark.sparkContext._conf.setAll(v.settings)
+    spark = s.setSparkConfHive(spark)
     sc = s.sparkcontext()
     #
-    # Get data from Hive table
-    tableName="ukhouseprices"
-    fullyQualifiedTableName = v.DSDB+'.'+tableName
-    summaryTableName = v.DSDB+'.'+'summary'
-    start_date = "2010-01-01"
-    end_date = "2020-01-01"
-    yearlyAveragePricesTable = v.DSDB+f""".yearlyaveragepricesTable"""
+        # Get data from Hive table
+    tableName=config['GCPVariables']['sourceTable']
+    fullyQualifiedTableName = config['hiveVariables']['DSDB']+'.'+tableName
+    summaryTableName = config['hiveVariables']['DSDB']+'.'+'summary'
+    yearlyAveragePricesAllTable = config['hiveVariables']['DSDB']+f""".yearlyaveragepricesAllTable"""
     lst = (spark.sql("SELECT FROM_unixtime(unix_timestamp(), 'dd/MM/yyyy HH:mm:ss.ss') ")).collect()
     print("\nStarted at");uf.println(lst)
-    if (spark.sql(f"""SHOW TABLES IN {v.DSDB} like '{tableName}'""").count() == 1):
+    print (f"""Getting average yearly prices per region for all""")
+    if (spark.sql(f"""SHOW TABLES IN {config['hiveVariables']['DSDB']} like '{tableName}'""").count() == 1):
         spark.sql(f"""ANALYZE TABLE {fullyQualifiedTableName} compute statistics""")
         rows = spark.sql(f"""SELECT COUNT(1) FROM {fullyQualifiedTableName}""").collect()[0][0]
         print("Total number of rows is ",rows)
@@ -54,7 +49,8 @@ def main():
                     distinct().orderBy('datetaken', asending=True)
 
     df2.show(20,False)
-    df2.write.mode("overwrite").saveAsTable(f"""{yearlyAveragePricesTable}""")
+    df2.write.mode("overwrite").saveAsTable(f"""{yearlyAveragePricesAllTable}""")
+    print(f"""created {yearlyAveragePricesAllTable}""")
     lst = (spark.sql("SELECT FROM_unixtime(unix_timestamp(), 'dd/MM/yyyy HH:mm:ss.ss') ")).collect()
     print("\nFinished at");uf.println(lst)
 
