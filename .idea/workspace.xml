@@ -4,34 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0d7c971-1494-4353-bc40-e872b9d49447" name="Default Changelist" comment="added a new module to work out average yearly prices per regionname">
-      <change afterPath="$PROJECT_DIR$/conf/config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/plotLorentzianPerRegion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/workoutPercentYearlyAveragePricesChange.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/debugger-1.3-py3.8.egg-info/PKG-INFO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/debugger-1.3-py3.8.egg-info/SOURCES.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/debugger-1.3-py3.8.egg-info/dependency_links.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/debugger-1.3-py3.8.egg-info/installed-files.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/debugger-1.3-py3.8.egg-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/debugger/__init__.py" afterDir="false" />
+    <list default="true" id="e0d7c971-1494-4353-bc40-e872b9d49447" name="Default Changelist" comment="minor changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/variables.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf/variables.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PLotYearlyPrices.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlotPercentMonthlyChange.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlotPercentMonthlyChangePerRegion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlotPercentYearlyChange.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlotPercentYearlyChangePerRegion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlotPropertyType.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Plot_VolumrOfSales.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plot_VolumrOfSalesPerRegion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/analyze_UKHousing.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/analyze_UKHousing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/analyze_house_prices_GCP.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/full_Plot_UKWide_describe.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/full_Plot_UKWide_describe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/full_plot_describe.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/load_UK_house_indexes.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offshoreOwnershipPerDistrcit.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/offshoreOwnershipPerDistrcit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/somecrap.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/summary_GCP_plots.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/workoutPercentMonthlyAveragePriceChange.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/summary_plot_describe.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/summary_plot_describe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/workoutYearlyAveragePrices.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/workoutYearlyAveragePricesAll.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,10 +43,11 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../packages" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -241,9 +216,9 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.PlotPercentMonthlyChangePerRegion" />
       <item itemvalue="Python.plotLorentzianPerRegion" />
       <item itemvalue="Python.workoutPercentMonthlyAveragePriceChange" />
+      <item itemvalue="Python.PlotPercentMonthlyChangePerRegion" />
       <item itemvalue="Python.workoutPercentYearlyAveragePricesChange" />
       <item itemvalue="Python.workoutYearlyAveragePricesAll" />
     </list>
@@ -371,7 +346,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610484714353</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="minor changes">
+      <created>1610915707222</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1610915707222</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -388,11 +370,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <ignored-roots>
-      <path value="$PROJECT_DIR$/../../packages" />
-    </ignored-roots>
     <MESSAGE value="first commit" />
-    <MESSAGE value="minor changes" />
     <MESSAGE value="tests were added" />
     <MESSAGE value="minor change to analyse_UKHousing.py" />
     <MESSAGE value="major changes to analyse_UKHousing.py" />
@@ -401,7 +379,8 @@
     <MESSAGE value="sdome changes" />
     <MESSAGE value="major changes" />
     <MESSAGE value="added a new module to work out average yearly prices per regionname" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a new module to work out average yearly prices per regionname" />
+    <MESSAGE value="minor changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
