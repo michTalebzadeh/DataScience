@@ -21,7 +21,6 @@ def main():
     # Get data from Hive table
     tableName=config['GCPVariables']['sourceTable']
     fullyQualifiedTableName = config['hiveVariables']['DSDB']+'.'+tableName
-    summaryTableName = config['hiveVariables']['DSDB']+'.'+'summary'
     start_date = "2010-01-01"
     end_date = "2020-01-01"
     monthTable = config['hiveVariables']['DSDB']+f""".percentmonthlyhousepricechange_{short}"""

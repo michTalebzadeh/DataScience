@@ -24,7 +24,7 @@ def main():
   spark = s.setSparkConfHive(spark)
   sc = s.sparkcontext()
   #
-  start_date = 201001
+  start_date = 201601
   end_date = 202001
   tableName = f"""percentmonthlyhousepricechange_{short}"""
   monthTable = config['hiveVariables']['DSDB'] + "."+f"""{tableName}"""
@@ -47,6 +47,7 @@ def main():
   plt.title(f"""Property price fluctuations in {regionname} for the past 10 years """, fontdict=config['plot_fonts']['font'])
   plt.margins(0.15)
   plt.subplots_adjust(bottom=0.25)
+  plt.xticks(rotation=20)
   plt.show()
   plt.close()
   lst = (spark.sql("SELECT FROM_unixtime(unix_timestamp(), 'dd/MM/yyyy HH:mm:ss.ss') ")).collect()

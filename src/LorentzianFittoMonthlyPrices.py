@@ -3,7 +3,7 @@ import sys
 from sparkutils import sparkstuff as s
 from othermisc import usedFunctions as uf
 from matplotlib import pyplot as plt
-from lmfit.models import LinearModel, LorentzianModel
+from lmfit.models import LinearModel, LorentzianModel, VoigtModel
 from pyspark.ml.feature import VectorAssembler
 from pyspark.ml.regression import LinearRegression
 from pyspark.ml.stat import ChiSquareTest
@@ -28,49 +28,48 @@ def functionLorentzian(x, amp1, cen1, wid1, amp2,cen2,wid2, amp3,cen3,wid3):
 
 def main():
     regionname = sys.argv[1]  ## parameter passed
+    short = regionname.replace(" ", "").lower()
     appName = config['common']['appName']
     spark = s.spark_session(appName)
     spark = s.setSparkConfHive(spark)
     sc = s.sparkcontext()
     #
     # Get data from Hive table
-    tableName = config['GCPVariables']['sourceTable']
+    tableName = f"""percentmonthlyhousepricechange_{short}"""
     fullyQualifiedTableName = config['hiveVariables']['DSDB']+'.'+tableName
     start_date = "201001"
     end_date = "202001"
     lst = (spark.sql("SELECT FROM_unixtime(unix_timestamp(), 'dd/MM/yyyy HH:mm:ss.ss') ")).collect()
     print("\nStarted at");uf.println(lst)
     if (spark.sql(f"""SHOW TABLES IN {config['hiveVariables']['DSDB']} like '{tableName}'""").count() == 1):
-        rows = spark.sql(f"""SELECT COUNT(1) FROM {fullyQualifiedTableName} WHERE lower(regionname) = lower('{regionname}')""").collect()[0][0]
+        rows = spark.sql(f"""SELECT COUNT(1) FROM {fullyQualifiedTableName}""").collect()[0][0]
         print(f"""Total number of rows for {regionname} is """, rows)
         if rows == 0:
             sys.exit(1)
     else:
-        print(f"""No such table {fullyQualifiedTableName} and {regionname}""")
+        print(f"""No such table {fullyQualifiedTableName}""")
         sys.exit(1)
     # Model predictions
     spark.conf.set("spark.sql.execution.arrow.pyspark.enabled", "true")
-    summary_df = spark.sql(f"""SELECT cast(date_format(datetaken, "yyyyMM") as int) as datetaken, flatprice, terracedprice, semidetachedprice, detachedprice FROM {fullyQualifiedTableName}
-        WHERE lower(regionname) = lower('{regionname}')""")
-    df_10 = summary_df.filter(col("datetaken").between(f'{start_date}', f'{end_date}'))
+    summary_df = spark.sql(f"""SELECT cast(year_month as int) as year_month, percent_change FROM {fullyQualifiedTableName}""")
+    df_10 = summary_df.filter(col("year_month").between(f'{start_date}', f'{end_date}'))
     print(df_10.toPandas().columns.tolist())
     p_dfm = df_10.toPandas()  # converting spark DF to Pandas DF
     # Non-Linear Least-Squares Minimization and Curve Fitting
     # Define model to be Lorentzian and deploy it
-    #model = LorentzianModel()
-    model = GuaussianModel()
+    model = LorentzianModel()
     n = len(p_dfm.columns)
     for i in range(n):
-      if (p_dfm.columns[i] != 'datetaken'):   # yyyyMM is x axis in integer
+      if (p_dfm.columns[i] != 'year_month'):   # yyyyMM is x axis in integer
          # it goes through the loop and plots individual average curves one by one and then prints a report for each y value
          vcolumn = p_dfm.columns[i]
          print(vcolumn)
-         params = model.guess(p_dfm[vcolumn], x = p_dfm['datetaken'])
-         result = model.fit(p_dfm[vcolumn], params, x = p_dfm['datetaken'])
+         params = model.guess(p_dfm[vcolumn], x = p_dfm['year_month'])
+         result = model.fit(p_dfm[vcolumn], params, x = p_dfm['year_month'])
          # plot the data points, initial fit and the best fit
-         plt.plot(p_dfm['datetaken'], p_dfm[vcolumn], 'bo', label = 'data')
-         plt.plot(p_dfm['datetaken'], result.init_fit, 'k--', label='initial fit')
-         plt.plot(p_dfm['datetaken'], result.best_fit, 'r-', label='best fit')
+         plt.plot(p_dfm['year_month'], p_dfm[vcolumn], 'bo', label = 'data')
+         #plt.plot(p_dfm['year_month'], result.init_fit, 'k--', label='initial fit')
+         plt.plot(p_dfm['year_month'], result.best_fit, 'r-', label='best fit')
          plt.legend(loc='upper left')
          plt.xlabel("Year/Month", fontdict=config['plot_fonts']['font'])
          plt.text(0.35,
@@ -80,12 +79,13 @@ def main():
                   color="grey",
                   fontsize=9
                   )
+         property = "Average price percent Change"
          if vcolumn == "flatprice": property = "Flat"
          if vcolumn == "terracedprice": property = "Terraced"
          if vcolumn == "semidetachedprice": property = "semi-detached"
          if vcolumn == "detachedprice": property = "detached"
-         plt.ylabel(f"""{property} house prices in millions/GBP""", fontdict=config['plot_fonts']['font'])
-         plt.title(f"""Monthly {property} price fluctuations in {regionname}""", fontdict=config['plot_fonts']['font'])
+         plt.ylabel(f"""{property} """, fontdict=config['plot_fonts']['font'])
+         plt.title(f"""Monthly {property} in {regionname}""", fontdict=config['plot_fonts']['font'])
          plt.xlim(200901, 202101)
          print(result.fit_report())
          plt.show()
