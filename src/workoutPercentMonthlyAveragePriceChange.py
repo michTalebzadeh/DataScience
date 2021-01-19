@@ -8,19 +8,14 @@ from sparkutils import sparkstuff as s
 from othermisc import usedFunctions as uf
 import locale
 locale.setlocale(locale.LC_ALL, 'en_GB')
-try:
-  import variables as v
-except ModuleNotFoundError:
-  from conf import variables as v
 from config import config
 
 def main():
     regionname = sys.argv[1]  ## parameter passed
     short = regionname.replace(" ", "").lower()
-    print (f"""Getting Monthly table for {regionname}""")
     appName = config['common']['appName']
     spark = s.spark_session(appName)
-    spark.sparkContext._conf.setAll(v.settings)
+    spark = s.setSparkConfHive(spark)
     sc = s.sparkcontext()
     #
     # Get data from Hive table
@@ -32,6 +27,7 @@ def main():
     monthTable = config['hiveVariables']['DSDB']+f""".percentmonthlyhousepricechange_{short}"""
     lst = (spark.sql("SELECT FROM_unixtime(unix_timestamp(), 'dd/MM/yyyy HH:mm:ss.ss') ")).collect()
     print("\nStarted at");uf.println(lst)
+    print(f"""Getting Monthly table for {regionname}""")
     if (spark.sql(f"""SHOW TABLES IN {config['hiveVariables']['DSDB']} like '{tableName}'""").count() == 1):
         spark.sql(f"""ANALYZE TABLE {fullyQualifiedTableName} compute statistics""")
         rows = spark.sql(f"""SELECT COUNT(1) FROM {fullyQualifiedTableName}""").collect()[0][0]

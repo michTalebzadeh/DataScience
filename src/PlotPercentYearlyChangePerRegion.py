@@ -7,34 +7,23 @@ from pyspark.sql.functions import lag
 from sparkutils import sparkstuff as s
 from othermisc import usedFunctions as uf
 from pyhive import hive
-from pyspark.ml.feature import VectorAssembler
-from pyspark.ml.regression import LinearRegression
-from pyspark.ml.regression import DecisionTreeRegressor
-from pyspark.ml.regression import GBTRegressor
-from pyspark.ml.evaluation import RegressionEvaluator
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 from pandas.plotting import scatter_matrix
-import six
 import locale
 import seaborn as sns
 import mpl_toolkits
 import tkinter
 locale.setlocale(locale.LC_ALL, 'en_GB')
-try:
-  import variables as v
-except ModuleNotFoundError:
-  from conf import variables as v
 from config import config
 
 def main():
   regionname = sys.argv[1]  ## parameter passed
   short = regionname.replace(" ", "").lower()
-  print(f"""Getting plots for {regionname}""")
   appName = config['common']['appName']
   spark = s.spark_session(appName)
-  spark.sparkContext._conf.setAll(v.settings)
+  spark = s.setSparkConfHive(spark)
   sc = s.sparkcontext()
   #
   # Get data from Hive table
@@ -43,7 +32,7 @@ def main():
 
   lst = (spark.sql("SELECT FROM_unixtime(unix_timestamp(), 'dd/MM/yyyy HH:mm:ss.ss') ")).collect()
   print("\nStarted at");uf.println(lst)
-
+  print(f"""Getting plots for {regionname}""")
   spark.conf.set("spark.sql.execution.arrow.pyspark.enabled", "true")
 
   if (spark.sql(f"""SHOW TABLES IN {config['hiveVariables']['DSDB']} like '{tableName}'""").count() == 1):
