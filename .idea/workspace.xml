@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0d7c971-1494-4353-bc40-e872b9d49447" name="Default Changelist" comment="changes to code and plotting parameters">
-      <change afterPath="$PROJECT_DIR$/src/LorentzianFittoMonthlyPrices.py" afterDir="false" />
+    <list default="true" id="e0d7c971-1494-4353-bc40-e872b9d49447" name="Default Changelist" comment="changes to the Lorentzian module">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlotPercentMonthlyChangePerRegion.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlotPercentMonthlyChangePerRegion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plotLorentzianPerRegion.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/plotLorentzianPerRegion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/workoutPercentMonthlyAveragePriceChange.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/workoutPercentMonthlyAveragePriceChange.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,6 +173,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="offshoreOwnershipPerDistrcit" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="DS" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/offshoreOwnershipPerDistrcit.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="plotLOrentzianPerRegion2" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="DS" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -211,7 +228,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/plotLorentzianPerRegion.py" />
-      <option name="PARAMETERS" value="&quot;Kensington and Chelsea&quot;" />
+      <option name="PARAMETERS" value="&quot;Redbridge&quot;" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -253,7 +270,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/workoutPercentMonthlyAveragePriceChange.py" />
-      <option name="PARAMETERS" value="&quot;Kensington and Chelsea&quot;" />
+      <option name="PARAMETERS" value="&quot;Tower Hamlets&quot;" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -314,13 +331,14 @@
       <item itemvalue="Python.plotLorentzianPerRegion" />
       <item itemvalue="Python.plotLOrentzianPerRegion2" />
       <item itemvalue="Python.LorentzianFittoMonthlyPrices" />
+      <item itemvalue="Python.offshoreOwnershipPerDistrcit" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.plotLorentzianPerRegion" />
+        <item itemvalue="Python.workoutPercentMonthlyAveragePriceChange" />
         <item itemvalue="Python.PlotPercentMonthlyChangePerRegion" />
         <item itemvalue="Python.PlotPercentYearlyChangePerRegion" />
-        <item itemvalue="Python.workoutPercentMonthlyAveragePriceChange" />
         <item itemvalue="Python.Plot_VolumrOfSalesPerRegion" />
       </list>
     </recent_temporary>
@@ -467,7 +485,21 @@
       <option name="project" value="LOCAL" />
       <updated>1611050111093</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="changes to the Lorentzian module">
+      <created>1611084259048</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1611084259048</updated>
+    </task>
+    <task id="LOCAL-00021" summary="changes to the Lorentzian module">
+      <created>1611084390848</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1611084390848</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -495,6 +527,7 @@
     <MESSAGE value="added a new module to work out average yearly prices per regionname" />
     <MESSAGE value="minor changes" />
     <MESSAGE value="changes to code and plotting parameters" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes to code and plotting parameters" />
+    <MESSAGE value="changes to the Lorentzian module" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes to the Lorentzian module" />
   </component>
 </project>
