@@ -57,8 +57,7 @@ def main():
     p_dfm = df_10.toPandas()  # converting spark DF to Pandas DF
     # Non-Linear Least-Squares Minimization and Curve Fitting
     # Define model to be Lorentzian and deploy it
-    #model = LorentzianModel()
-    model = GuaussianModel()
+    model = LorentzianModel()
     n = len(p_dfm.columns)
     for i in range(n):
       if (p_dfm.columns[i] != 'datetaken'):   # yyyyMM is x axis in integer
