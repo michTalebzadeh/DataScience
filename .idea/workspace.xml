@@ -6,6 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="e0d7c971-1494-4353-bc40-e872b9d49447" name="Default Changelist" comment="changes to the Lorentzian module">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/configs/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configs/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/variables.py" beforeDir="false" afterPath="$PROJECT_DIR$/configs/variables.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Boston.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boston.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/analyze_UKHousing.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/analyze_UKHousing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/full_Plot_UKWide_describe.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/full_Plot_UKWide_describe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/offshoreOwnershipPerDistrcit.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/offshoreOwnershipPerDistrcit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/summary_plot_describe.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/summary_plot_describe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/workoutPercentYearlyAveragePricesChange.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/workoutPercentYearlyAveragePricesChange.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -506,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611091887055</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="changes to the Lorentzian module">
+      <created>1612217153550</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1612217153550</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
